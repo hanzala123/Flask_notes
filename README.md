@@ -121,7 +121,7 @@ Install Redis.
    ```sh
    pip3 install -r requirements.txt
    ```
-4. Enter your password `config.py`
+4. Enter your password in the `config.py`
    ```sh
    WEB_PASSW = YOUR_PASSWORD_HERE
    ```
