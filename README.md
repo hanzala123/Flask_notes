@@ -87,7 +87,6 @@ Note: Redis is an in-memory database program but all the versions I used do stor
 
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
 * [Nerve](https://github.com/PaytmLabs/nerve)
 * [flask-note](https://github.com/tanrax/flask-note)
 
@@ -179,17 +178,8 @@ Project Link: [https://github.com/hanzala123/Flask_notes](https://github.com/han
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
+* [Bootstrap](https://getbootstrap.com)
+* [JQuery](https://jquery.com)
 * [Nerve](https://github.com/PaytmLabs/nerve)
 * [flask-note](https://github.com/tanrax/flask-note)
 
