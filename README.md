@@ -190,7 +190,8 @@ Project Link: [https://github.com/hanzala123/Flask_notes](https://github.com/han
 * [Sticky Kit](http://leafo.net/sticky-kit)
 * [JVectorMap](http://jvectormap.com)
 * [Font Awesome](https://fontawesome.com)
-
+* [Nerve](https://github.com/PaytmLabs/nerve)
+* [flask-note](https://github.com/tanrax/flask-note)
 
 
 
