@@ -1,0 +1,67 @@
+{% extends 'layouts/master.html' %}
+{% block contain %}
+<div class="row">
+  <div class="col-sm-12 text-right">
+    <strong>{{username}}</strong>
+    <a href="{{ url_for('logout.view_logout') }}" class="btn btn-primary">Logout</a>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col-md-6">
+    <a href="/newnote" class="btn btn-success">New</a>
+  </div>
+  <div class="col-md-6 text-right">
+    {%- if data.main_note -%}
+    <a href="/editnote?id={{data['main_note']['title']}}" class="btn btn-warning">Edit</a>
+    <a href="/deletenote?id={{data['main_note']['title']}}" class="btn btn-danger">Delete</a>
+    {% endif %}
+  </div>
+</div>
+<br/>
+<div class="row">
+  
+  <div class="col-md-4">
+    
+    <div class="list-group">
+      
+      {% if data.notes %}
+      <form action="" method="get">
+        <div class="input-group">
+          <input name="q" type="text" class="form-control" placeholder="Search for...">
+          <span class="input-group-btn">
+          </span>
+        </div>
+      </form>
+      {% for note in data.notes %}
+      <a href="/notes?id={{note['title']}}" class="list-group-item">
+        <h4 class="list-group-item-heading" style="color: #444;">{{note['title']}}</h4>
+        <p class="list-group-item-text" style="color: black;">
+          {% if note['text']|length > 140 %}
+          {{ note['text'][:140] + '...' }}
+          {% else %}
+          {{ note['text']|safe }}
+          {% endif %}
+        </p>
+      </a>
+      {% endfor %}
+      {% else %}
+      <h4 class="list-group-item-heading">No Notes</h4>
+      {% endif %}
+    </div>
+
+  </div>
+  <div class="col-md-8">
+    {%- if data.main_note -%}
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h3>
+          {{ data.main_note['title'] }}
+        </h3>
+        {{ data.main_note['text'] }}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

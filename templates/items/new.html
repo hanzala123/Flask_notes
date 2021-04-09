@@ -1,0 +1,19 @@
+{% extends 'layouts/master.html' %}
+{% block contain %}
+
+<form action="/newnote/save" method="post">
+  <div class="row">
+    <div class="col-xs-6">
+      <a href="/notes" class="btn btn-danger">Back</a>
+    </div>
+    <div class="col-xs-6 text-right">
+      <button type="submit" class="btn btn-success">Save</button>
+    </div>
+  </div>
+  <br/>
+  <div class="row">
+    <input type="text" name="title" class="form-control" placeholder="Title..." required>
+    <textarea name="text" class="form-control" rows="10" placeholder="Your text..." required></textarea>
+  </div>
+</form>
+{% endblock %}
