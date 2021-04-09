@@ -15,35 +15,29 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
+
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+
 
 
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Flask Notes</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    This is a simple notes application written in Python3.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/hanzala123/Flask_notes/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/hanzala123/Flask_notes/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/hanzala123/Flask_notes/issues">Request Feature</a>
   </p>
 </p>
 
@@ -80,73 +74,76 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[product-screenshot](https://github.com/hanzala123/Flask_notes)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+The Open-Source community has given me a lot. Now I am starting to give it back as well. This is will be my first contribution.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
+I am making an app with notes functionality. I found [flask-note](https://github.com/tanrax/flask-note). But I couldn't get it to work. So I redited a lot of the things and used redis for the databse. I used [Nerve](https://github.com/PaytmLabs/nerve) as the base to provide security and other functions.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+Note: Redis is an in-memory database program but all the versions I used do store data in the drive as well. So a system reboot won't clear the database.
 
 ### Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
 * [Laravel](https://laravel.com)
+* [Nerve](https://github.com/PaytmLabs/nerve)
+* [flask-note](https://github.com/tanrax/flask-note)
 
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To get this program up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+Install Redis.
   ```sh
-  npm install npm@latest -g
+  sudo apt install -y redis
+  sudo systemctl enable nerve
+  sudo systemctl start nerve
   ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/hanzala123/Flask_notes.git
    ```
-3. Install NPM packages
+2. Go to the directory
    ```sh
-   npm install
+   cd Flask_notes
    ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
+3. Install the requirements
+   ```sh
+   pip3 install -r requirements.txt
+   ```
+4. Enter your password `config.py`
+   ```sh
+   WEB_PASSW = YOUR_PASSWORD_HERE
    ```
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+Start the program using
+   ```sh
+   python3 main.py
+   ```
+Open your browser and visit http://localhost:8080/
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
+Log in using the crendetials. The Default username is admin and password is 12345.
+You can change the password in the config.py file.
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+I planned to do some js for the searching. But I am not very good at it so it will take time. Contributions are always welcome.
+See the [open issues](https://github.com/hanzala123/Flask_notes/issues) for a list of proposed features (and known issues).
 
 
 
@@ -173,9 +170,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Your Name - Hanzala Ibn Zahid
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/hanzala123/Flask_notes](https://github.com/hanzala123/Flask_notes)
 
 
 
@@ -211,4 +208,5 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/Screenshot1.png
+[product-screenshot2]: images/Screenshot2.png
