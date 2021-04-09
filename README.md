@@ -74,7 +74,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[product-screenshot](https://github.com/hanzala123/Flask_notes)
+[![product-screenshot]](https://github.com/hanzala123/Flask_notes)
+[![product-screenshot2]](https://github.com/hanzala123/Flask_notes)
 
 The Open-Source community has given me a lot. Now I am starting to give it back as well. This is will be my first contribution.
 
@@ -203,10 +204,10 @@ Project Link: [https://github.com/hanzala123/Flask_notes](https://github.com/han
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
 [stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[issues-url]: https://github.com/hanzala123/Flask_notes/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/Screenshot1.png
+[product-screenshot]: images/Screenshot.png
 [product-screenshot2]: images/Screenshot2.png
