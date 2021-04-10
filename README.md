@@ -85,8 +85,6 @@ Note: Redis is an in-memory database program but all the versions I used do stor
 
 ### Built With
 
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
 * [Nerve](https://github.com/PaytmLabs/nerve)
 * [flask-note](https://github.com/tanrax/flask-note)
 
@@ -102,8 +100,8 @@ To get this program up and running follow these simple steps.
 Install Redis.
   ```sh
   sudo apt install -y redis
-  sudo systemctl enable nerve
-  sudo systemctl start nerve
+  sudo systemctl enable redis
+  sudo systemctl start redis
   ```
 
 ### Installation
@@ -178,8 +176,6 @@ Project Link: [https://github.com/hanzala123/Flask_notes](https://github.com/han
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
 * [Nerve](https://github.com/PaytmLabs/nerve)
 * [flask-note](https://github.com/tanrax/flask-note)
 
