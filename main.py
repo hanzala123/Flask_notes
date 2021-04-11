@@ -2,7 +2,6 @@ import config
 import os
 
 from core.redis   import rds
-#from core.workers import start_workers
 
 from version import VERSION
 from flask   import Flask
@@ -46,8 +45,6 @@ def show_version():
   return dict(version=VERSION)
 
 if __name__ == '__main__':  
-  #rds.initialize()
-  #start_workers()
   app.run(debug = True, 
           host  = config.WEB_HOST, 
           port  = config.WEB_PORT,
