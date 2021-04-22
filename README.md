@@ -140,7 +140,7 @@ You can change the password in the config.py file.
 <!-- ROADMAP -->
 ## Roadmap
 
-I planned to do some js for the searching. But I am not very good at it so it will take time. Contributions are always welcome.
+Contributions are always welcome.
 See the [open issues](https://github.com/hanzala123/Flask_notes/issues) for a list of proposed features (and known issues).
 
 
